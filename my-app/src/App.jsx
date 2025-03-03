@@ -1,18 +1,5 @@
-import './App.css';
-// import UserCard from './counter';
-
-import Counter from './counter';
-
-const UserCard = (props) => {
-  return (
-    <div>
-      <h1>User Cards</h1>
-      <p>Full Name: {props.name}</p>
-      <p>Age: {props.age}</p>
-      <p>Email: {props.email}</p>
-    </div>
-  );
-};
+import React from "react";
+import UserCard from "./Task2/UserCard";
 
 function App() {
   const groupMembers = ["Lydia", "Nahom", "Yonas", "Nati"];
@@ -26,8 +13,12 @@ function App() {
         ))}
       </ul>
 
-      
-      <UserCard name="Lydia" age={20} email="lydiayonas4@gmail.com" />
+      <UserCard
+        name="Lydia"
+        age={20}
+        email="lydiayonas4@gmail.com"
+        bgColor="#16a34a"
+      />
     </>
   );
 }
